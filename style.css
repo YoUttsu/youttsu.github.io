@@ -26,9 +26,9 @@ img{
 #win-screen{
     position: absolute;
     cursor: pointer;
-    left: 20%;
+    left: 10%;
     height: auto;
-    width: 500px;
+    width: 30%;
     border: solid 5px rebeccapurple;
     background-color: white;
     top:20% ;
