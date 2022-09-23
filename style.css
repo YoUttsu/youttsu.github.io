@@ -32,7 +32,7 @@ img{
     border: solid 5px rebeccapurple;
     background-color: white;
     top:20% ;
-    display: block;  
+    display: none;  
     cursor: pointer;
 }
 #new{
