@@ -31,7 +31,7 @@ img{
     width: 500px;
     border: solid 5px rebeccapurple;
     background-color: white;
-    bottom: 20%;
+    top:20% ;
     display: block;  
     cursor: pointer;
 }
