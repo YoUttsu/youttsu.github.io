@@ -26,13 +26,13 @@ img{
 #win-screen{
     position: absolute;
     cursor: pointer;
-    left: 500px;
+    left: 20%;
     height: auto;
     width: 500px;
     border: solid 5px rebeccapurple;
     background-color: white;
-    bottom: 0px;
-    display: none;  
+    bottom: 20%;
+    display: block;  
     cursor: pointer;
 }
 #new{
