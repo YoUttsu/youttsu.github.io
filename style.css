@@ -1,0 +1,52 @@
+
+
+
+div{
+    text-align: center;
+}
+img{
+   width: 10%;
+}
+#start{
+    display: inline-block;  
+    text-align: center;
+    width: 100%; 
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+     
+}
+#mainscreen{
+    position: relative;
+    
+}
+#win-screen{
+    position: absolute;
+    cursor: pointer;
+    left: 500px;
+    height: auto;
+    width: 500px;
+    border: solid 5px rebeccapurple;
+    background-color: white;
+    bottom: 0px;
+    display: none;  
+    cursor: pointer;
+}
+#new{
+    width: 300px;
+    height: auto;
+}
+
+#score{
+    text-align: center;
+}
+#nextBtn{
+    background-color: green;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
