@@ -1,0 +1,11 @@
+1.copy this folder 
+
+2. just run this in terminal
+
+npm i
+
+//and after that
+npm run start
+
+3. to build website for production "npm run build"
+ezy
