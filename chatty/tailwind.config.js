@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content: ["*"],
+  
+  content: ['*'],
   theme: {
-    extend: {},
+    screens: {
+      'xs': '330px',
+      ...defaultTheme.screens,
+    },
   },
   plugins: [],
 }
