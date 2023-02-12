@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-  <link rel="stylesheet" href="/dist/assets/index.4cf504d1.css">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="/assets/index.4cf504d1.css">
 </head>
 <body class="bg-slate-400">
     
     <video autoplay loop muted plays-inline class="absolute right-0 bottom-0 z-[-1] aspect-video">
-        <source src="/dist/assets/pc.e9c52b53.mp4" type="video/mp4">
+        <source src="assets/pc.e9c52b53.mp4" type="video/mp4">
     </video>
     <video autoplay loop muted plays-inline class="md:hidden absolute right-0 bottom-0 z-[-1] aspect-video">
-        <source src="/dist/assets/tablets.a0680d7c.mp4" type="video/mp4">
+        <source src="assets/tablets.a0680d7c.mp4" type="video/mp4">
     </video>
     <video autoplay loop muted plays-inline class="sm:hidden absolute right-0 bottom-0 z-[-1] aspect-auto">
-        <source src="/dist/assets/tablets.a0680d7c.mp4" type="video/mp4">
+        <source src="assets/tablets.a0680d7c.mp4" type="video/mp4">
     </video>
     <video autoplay loop muted plays-inline class="xs:hidden absolute right-0 bottom-0 z-[-1] aspect-[9/16]">
-        <source src="/dist/assets/mobile.8aada9fb.mp4" type="video/mp4">
+        <source src="assets/mobile.8aada9fb.mp4" type="video/mp4">
     </video>
     
     
 
     <div class="bg-black bg-opacity-70 h-full w-full top-0 left-0 relative p-0 m-0">
-            <div id="firstscreen" class="bg-black bg-opacity-70 h-full w-full top-0 left-0 fixed p-0 m-0">
+            <!-- <div id="firstscreen" class="bg-black bg-opacity-70 h-full w-full top-0 left-0 fixed p-0 m-0">
                 <div class="flex align-middle justify-center h-full w-full top-0 left-0 p-0 m-0">
                     <h3 class="m-3 text-white">enter your name</h3>
                     <div>
@@ -35,7 +35,7 @@
                         <button id="namebtn" class="hover:bg-blue-600 m-8 ml-3 bg-blue-500 text-white text-center p-2 shadow-md shadow-black">submit</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         <main>
             <div class="m-auto w-full h-full overflow-y-auto" id="messagesContainer">
                 

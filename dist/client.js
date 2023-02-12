@@ -1,19 +1,24 @@
-
+import * as env from 'dotenv'
 let {createCipheriv} = require('crypto')
-let key = '<Buffer 5a 01 94 8f 74 9a 7c 32 7a b0 0d d3 34 68 c2 d4 a9 d0 49 4d 70 31 49 69 a6 24 55 9c 1d 0b b8 f0>'
-let iv = '<Buffer 27 a4 d6 b5 a2 9f e9 a3 86 dc 98 5a c7 31 59 cd>'
+let key= process.env.key
+let iv = process.env.iv
+
 let cypher_decypher = createCipheriv('aes-256-gcm',key,iv)
 //getting user's name 
 let button = document.getElementById("namebtn")
 let userNameIp = document.getElementById("username")
 
-let name='';
+// let name='';
 
-button.addEventListener("click",()=>{
-    name = userNameIp.value
-    document.getElementById("firstscreen").classList="hidden"
-    socket.emit('new-user-joined', name);
-})
+// button.addEventListener("click",()=>{
+//     name = userNameIp.value
+//     document.getElementById("firstscreen").classList="hidden"
+//     socket.emit('new-user-joined', name);
+// })
+
+let name = prompt("enter your name")
+socket.emit('new-user-joined', name);
+
 
 //main chat
 const socket = io('http://localhost:8000')
