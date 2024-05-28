@@ -1,72 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
-    <link rel="stylesheet" href="./input.css">
+<html>
+<head lang="en">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=devide-width, initial-scale=0.1" />
+  <title>MADAM SORRY.   :)</title>
+  <style>
+    .image-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin.top: 80px;
+    }
+    .text-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin.top: 80px;
+    }
+    .iyaa {
+      background-color: #8df19a;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    .tricky {
+      position: absolute;
+      left: auto;
+      right: auto;
+    }
+  </style>
 </head>
-<body class="bg-slate-400">
-    
-    <video autoplay loop muted plays-inline class="absolute right-0 bottom-0 z-[-1] aspect-video">
-        <source src="./pc.mp4" type="video/mp4">
-    </video>
-    <video autoplay loop muted plays-inline class="md:hidden absolute right-0 bottom-0 z-[-1] aspect-video">
-        <source src="./tablets.mp4" type="video/mp4">
-    </video>
-    <video autoplay loop muted plays-inline class="sm:hidden absolute right-0 bottom-0 z-[-1] aspect-auto">
-        <source src="./tablets.mp4" type="video/mp4">
-    </video>
-    <video autoplay loop muted plays-inline class="xs:hidden absolute right-0 bottom-0 z-[-1] aspect-[9/16]">
-        <source src="./mobile.mp4" type="video/mp4">
-    </video>
-    
-    
-
-    <div class="bg-black bg-opacity-70 h-full w-full top-0 left-0 relative p-0 m-0">
-            <div id="firstscreen" class="bg-black bg-opacity-70 h-full w-full top-0 left-0 fixed p-0 m-0">
-                <div class="flex align-middle justify-center h-full w-full top-0 left-0 p-0 m-0">
-                    <h3 class="m-3 text-white">enter your name</h3>
-                    <form action="#">
-                        <input type="text" name="name" id="username" class="m-3">
-                        <br>
-                        <button type="submit" id="namebtn" class="hover:bg-blue-600 m-8 ml-3 bg-blue-500 text-white text-center p-2 shadow-md shadow-black">submit</button>
-                    </form>
-                </div>
-            </div>
-        <main>
-            <div class="m-auto w-full h-full overflow-y-auto">
-                
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-slate-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-left clear-both ">friendname:hii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere molestiae doloremque aliquam sapiente vero rem, quas et libero modi quod architecto. Itaque autem et non in excepturi maiores dolorem!</div>
-                    <div class="sm:w-[30%] text-white w-[50%] bg-green-700 bg-opacity-60  border-solid border-2 shadow-md shadow-black rounded-xl p-3 mx-3 my-2 float-right clear-both">you:hello</div>
-                    <div class="sm:[w-30%] w[50%] bg-slate-800 bg-opacity-60 text-gray-400 border-solid border-2 shadow-md shadow-black rounded-xl p-2 mx-3 my-2 clear-both text-center">user joined chat</div>
-                
-                
-            </div>
-            <div class=" m-auto text-center max-w-5xl w-full  flex items-center justify-center">
-                <form action="#" class="block m-auto text-center w-[100%] max-w-full" id="send-container">
-                    
-                        <input type="text" name="messageinp" id="messageinp" class="w-[80%] h-9 text-lg bg-slate-700 shadow-md shadow-black text-white">
-                        <button type="submit" class="bg-green-700 text-white shadow-md shadow-black  mx-0 my-1 w-[9%] h-9 cursor-pointer " >enter</button>
-                    
-                </form>
-            </div>
-            
-                
-            
-       </main>
-    </div>
-<script src="./index.js"></script>
-</body>
+<body>
+  <div class="image-center">
+    <img src="https://c.tenor.com/VxixtsQjIRAAAAAj/chibi-cat-mochi-cat.gif" alt="image" Id="image-alt" />
+  </div>
+  <div class="text-center">
+    <h1 id="text">I Am Sorry Madam.......!</h1>
+  </div>
+  <div class="text-center">
+    <button type="button" class="iyaa" >ITS OK....</button>
+  </div>
+  <div class="tricky">
+    <button type="button" class="gamau">NO</button>
+  </div>
+  <script>
+    let iyaa = document.querySelector(".iyaa");
+    let Gamau = document.querySelector(".tricky");
+    iyaa.addEventListener("click", function() {
+      document.getElementById("image-alt").src = "https://c.tenor.com/lqtU1G4aaqIAAAAj/yom-dance.gif";
+      document.getElementById("text").innerHTML = "Achi Bachiii🙆 &hearts; &hearts; &hearts; &hearts;"
+    });
+    Gamau.addEventListener("mouseover", function () {
+      Gamau.style.left = Math.random()*90 + "%";
+      Gamau.style.top = Math.random()*90 + "%";
+    });
+  </script>
+</bodyl>
 </html>
